@@ -11,9 +11,9 @@ public class WeaponTester : MonoBehaviour
     [SerializeField]
     private Target target;
 
-    private void Awake()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetButtonDown("Fire1"))
         {
             currentWeapon.Attack(target);
         }
